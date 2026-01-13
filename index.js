@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(
   cors({
-    origin: 'https://link-up-backend-cyan.vercel.app/',
+    origin: 'https://link-up-backend-cyan.vercel.app',
     credentials: true
   })
 );
