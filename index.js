@@ -118,10 +118,10 @@ async function run() {
     app.patch("/users/:uid", async (req, res) => {
       try {
         const uid = req.params.uid;
-        if (uid !== req.user.uid)
-        {
-          return res.status(403).send({message: 'Error!. Forbiden User.'})
-        }
+        // if (uid !== req.user.uid)
+        // {
+        //   return res.status(403).send({message: 'Error!. Forbiden User.'})
+        // }
         const updateUser = req.body;
         const result = await UserCollection.updateOne(
           { uid: uid },
